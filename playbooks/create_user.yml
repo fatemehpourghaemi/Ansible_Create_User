@@ -1,0 +1,6 @@
+---
+- name: Create User and Add to sudo Group
+  hosts: all
+  become: yes
+  roles:
+    - role: user_management
